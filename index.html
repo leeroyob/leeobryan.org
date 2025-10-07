@@ -3,46 +3,212 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lee O'Bryan</title>
+    <title>Lee O'Bryan — Civil Engineering & AI</title>
     <style>
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
+
         body {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            min-height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: white;
+            line-height: 1.6;
+            color: #333;
+            background: #f5f5f5;
         }
+
+        /* Navigation */
+        nav {
+            background: white;
+            padding: 1.5rem 2rem;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav h1 {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: #2c3e50;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 2rem;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #666;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #667eea;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 6rem 2rem;
+            text-align: center;
+        }
+
+        .hero h2 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            font-weight: 700;
+        }
+
+        .hero p {
+            font-size: 1.5rem;
+            opacity: 0.95;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        /* Main Content */
         .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 4rem 2rem;
+        }
+
+        section {
+            background: white;
+            padding: 3rem;
+            margin-bottom: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+
+        h3 {
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+            color: #2c3e50;
+        }
+
+        p {
+            font-size: 1.125rem;
+            color: #555;
+            margin-bottom: 1rem;
+        }
+
+        .highlight {
+            background: #f8f9fa;
+            border-left: 4px solid #667eea;
+            padding: 1.5rem;
+            margin: 2rem 0;
+            border-radius: 4px;
+        }
+
+        .highlight h4 {
+            color: #667eea;
+            margin-bottom: 0.5rem;
+            font-size: 1.25rem;
+        }
+
+        /* Footer */
+        footer {
+            background: #2c3e50;
+            color: white;
             text-align: center;
             padding: 2rem;
+            margin-top: 4rem;
         }
-        h1 {
-            font-size: 4rem;
-            margin-bottom: 1rem;
-            animation: fadeIn 1s ease-in;
+
+        footer p {
+            color: rgba(255,255,255,0.8);
         }
-        p {
-            font-size: 1.5rem;
-            opacity: 0.9;
-            animation: fadeIn 1.5s ease-in;
-        }
-        @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(20px); }
-            to { opacity: 1; transform: translateY(0); }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero h2 {
+                font-size: 2rem;
+            }
+
+            .hero p {
+                font-size: 1.25rem;
+            }
+
+            nav ul {
+                gap: 1rem;
+            }
+
+            section {
+                padding: 2rem;
+            }
         }
     </style>
 </head>
 <body>
+    <!-- Navigation -->
+    <nav>
+        <div class="container">
+            <h1>Lee O'Bryan</h1>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#work">Work</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="hero">
+        <h2>Civil Engineering × AI</h2>
+        <p>Bringing enterprise-level technology to small contractors</p>
+    </section>
+
+    <!-- About -->
     <div class="container">
-        <h1>Lee O'Bryan</h1>
-        <p>Coming Soon</p>
+        <section id="about">
+            <h3>About</h3>
+            <p>I'm Lee O'Bryan — a civil engineering student from Illinois who's passionate about the intersection of technology, design, and the real world. My work centers on how thoughtful systems and practical innovation can make life and work simpler, clearer, and more human.</p>
+
+            <p>At heart, I'm both analytical and creative. I enjoy thinking deeply about how things connect — from cities and structures to the ideas and people that build them. I like to travel, to learn how things are made, and to make things myself — whether that's writing, tinkering, or cooking from scratch.</p>
+
+            <p>My faith as a Catholic shapes how I approach everything I do — with a sense of purpose, humility, and an aim toward building things that serve others and reflect a kind of quiet beauty in order and care.</p>
+        </section>
+
+        <!-- Work/Mission -->
+        <section id="work">
+            <h3>What I'm Building</h3>
+
+            <div class="highlight">
+                <h4>Leveling the Playing Field</h4>
+                <p>Small contractors are the backbone of construction, but they're often left behind when it comes to software and technology. While large firms have entire teams dedicated to project management systems, estimating tools, and data analytics, small contractors are stuck with spreadsheets, paper, and gut instinct.</p>
+            </div>
+
+            <p>I'm working on solutions that use AI to give small contractors the same capabilities as enterprise-level operations — without the enterprise-level cost or complexity.</p>
+
+            <p>The goal is simple: help small contractors work smarter, bid more accurately, manage projects more efficiently, and compete on a level playing field. Technology should be an equalizer, not a barrier.</p>
+        </section>
+
+        <!-- Contact -->
+        <section id="contact">
+            <h3>Get In Touch</h3>
+            <p>Interested in collaborating or just want to chat? Feel free to reach out.</p>
+            <p><strong>Email:</strong> <a href="mailto:obryanlee22@gmail.com" style="color: #667eea;">obryanlee22@gmail.com</a></p>
+        </section>
     </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Lee O'Bryan. Built with purpose.</p>
+    </footer>
 </body>
 </html>
