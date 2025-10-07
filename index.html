@@ -4,167 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lee O'Bryan — Civil Engineering & AI</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-            line-height: 1.6;
-            color: #333;
-            background: #f5f5f5;
-        }
-
-        /* Navigation */
-        nav {
-            background: white;
-            padding: 1.5rem 2rem;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-            position: sticky;
-            top: 0;
-            z-index: 100;
-        }
-
-        nav .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        nav h1 {
-            font-size: 1.5rem;
-            font-weight: 600;
-            color: #2c3e50;
-        }
-
-        nav ul {
-            list-style: none;
-            display: flex;
-            gap: 2rem;
-        }
-
-        nav a {
-            text-decoration: none;
-            color: #666;
-            font-weight: 500;
-            transition: color 0.3s;
-        }
-
-        nav a:hover {
-            color: #2d5016;
-        }
-
-        /* Hero Section */
-        .hero {
-            background: linear-gradient(135deg, #1a3a0f 0%, #2d5016 100%);
-            color: white;
-            padding: 6rem 2rem;
-            text-align: center;
-        }
-
-        .hero h2 {
-            font-size: 3rem;
-            margin-bottom: 1rem;
-            font-weight: 700;
-        }
-
-        .hero p {
-            font-size: 1.5rem;
-            opacity: 0.95;
-            max-width: 700px;
-            margin: 0 auto;
-        }
-
-        /* Main Content */
-        .container {
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 4rem 2rem;
-        }
-
-        section {
-            background: white;
-            padding: 3rem;
-            margin-bottom: 2rem;
-            border-radius: 8px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-        }
-
-        h3 {
-            font-size: 2rem;
-            margin-bottom: 1.5rem;
-            color: #2c3e50;
-        }
-
-        p {
-            font-size: 1.125rem;
-            color: #555;
-            margin-bottom: 1rem;
-        }
-
-        .highlight {
-            background: #f4f1ed;
-            border-left: 4px solid #6b4423;
-            padding: 1.5rem;
-            margin: 2rem 0;
-            border-radius: 4px;
-        }
-
-        .highlight h4 {
-            color: #2d5016;
-            margin-bottom: 0.5rem;
-            font-size: 1.25rem;
-        }
-
-        /* Footer */
-        footer {
-            background: #1a3a0f;
-            color: white;
-            text-align: center;
-            padding: 2rem;
-            margin-top: 4rem;
-        }
-
-        footer p {
-            color: rgba(255,255,255,0.8);
-        }
-
-        /* Responsive */
-        @media (max-width: 768px) {
-            .hero h2 {
-                font-size: 2rem;
-            }
-
-            .hero p {
-                font-size: 1.25rem;
-            }
-
-            nav ul {
-                gap: 1rem;
-            }
-
-            section {
-                padding: 2rem;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <!-- Navigation -->
     <nav>
-        <div class="container">
-            <h1>Lee O'Bryan</h1>
+        <div class="nav-container">
+            <h1><a href="index.html">Lee O'Bryan</a></h1>
             <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#work">Work</a></li>
-                <li><a href="#tools">Tools</a></li>
-                <li><a href="#art">Art</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="tools.html">Tools</a></li>
+                <li><a href="art.html">Art</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
         </div>
     </nav>
@@ -202,27 +53,6 @@
             <p>A big part of my work is building trust. AI can feel like a black box — people need to understand not just how it works, but why they can trust it. I'm focused on explaining AI systems in ways that make sense, showing the logic behind the decisions, and helping people develop informed confidence in these tools. Teaching isn't just about showing people what to do — it's about building understanding and trust so they can think critically about technology in their work.</p>
 
             <p>The goal is to bridge the gap between the built world and the digital one, thoughtfully and practically.</p>
-        </section>
-
-        <!-- Tools & Demos -->
-        <section id="tools">
-            <h3>Tools & Demos</h3>
-            <p>Things I've built. More coming soon.</p>
-            <!-- Links will go here as you add them -->
-        </section>
-
-        <!-- Art -->
-        <section id="art">
-            <h3>Art I Like</h3>
-            <p>A collection of work that inspires me.</p>
-            <!-- Art content will go here -->
-        </section>
-
-        <!-- Contact -->
-        <section id="contact">
-            <h3>Get In Touch</h3>
-            <p>Interested in collaborating or just want to chat? Feel free to reach out.</p>
-            <p><strong>Email:</strong> <a href="mailto:obryanlee22@gmail.com" style="color: #2d5016;">obryanlee22@gmail.com</a></p>
         </section>
     </div>
 
